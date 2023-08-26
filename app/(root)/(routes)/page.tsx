@@ -1,3 +1,9 @@
+import { UserButton } from "@clerk/nextjs";
+
 export default function RootPage() {
-  return <div className="text-pink-500 text-4xl">Root Page (Protected)</div>;
+  return (
+    <div>
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 }
